@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #0f1928;
+      }
+
+      .card {
+        padding: 2rem;
+        position: relative;
+        height: 100%;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+        box-shadow: 0 0 30px #000000;
+        transition: 1s ease-in-out;
+      }
+
+      .card:hover {
+        /* transition: 1s ease-in-out; */
+        transform: rotate(-10deg);
+        border: 2px solid #fff;
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(dark.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: blur(1.5px);
+        opacity: 0.8;
+        z-index: -1;
+      }
+
+      .hamburger {
+      }
+      h1.title {
+        margin-top: 2em;
+        font-family: "Indie Flower", cursive;
+        color: #fff;
+        font-size: 2.3em;
+        text-align: center;
+        transform: rotate(-5deg);
+      }
+
+      .rose {
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        opacity: 0.8;
+        filter: grayscale(1);
+      }
+
+      .discount {
+        position: absolute;
+        left: 40px;
+        bottom: 45%;
+      }
+      .btn {
+        text-align: center;
+        width: 150px;
+        font-family: sans-serif;
+        color: #fff;
+        font-size: 1rem;
+        background-color: #ff0340;
+        border: 1px solid #ff0340;
+        border-radius: 25px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom: 25px;
+      }
+
+      span {
+        font-family: sans-serif;
+      }
+
+      .fa-hamburger {
+        position: absolute;
+        color: #fff;
+        font-size: 2em;
+        top: 15px;
+        left: 20px;
+      }
+      .header {
+        position: relative;
+      }
+      .del {
+        position: absolute;
+        top: 120px;
+        left: -65px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <i class="fas fa-hamburger"
+        ><span style="font-size: 12px; vertical-align: middle;"
+          >GOOD TO EAT</span
+        ></i
+      >
+      <div class="header">
+        <h1 class="title">SUPER<br />DELICIOUS<br />BURGER</h1>
+        <img class="del" src="del.png" alt="" width="150" />
+      </div>
+      <img
+        class="discount"
+        src="discount.png"
+        width="100"
+        height="100"
+        alt=""
+      />
+      <img class="hamburger" src="hamburger.png" alt="" width="300" />
+      <button class="btn">SHOP NOW</button>
+      <i
+        class="fas fa-phone-alt"
+        style="color: #fff; vertical-align: middle; margin-bottom: 10px;"
+        ><span style="margin-left: 5px;">012-345-678</span></i
+      >
+      <i
+        class="fas fa-globe-americas"
+        style="color: #fff; vertical-align: middle; margin-bottom: 10px;"
+        ><span style="margin-left: 5px;">WWW.GOODFOOD.COM</span></i
+      >
+    </div>
+    <div class="card" style="margin-left: 50px;">
+      <i class="fas fa-hamburger"
+        ><span style="font-size: 12px; vertical-align: middle;"
+          >GOOD TO EAT</span
+        ></i
+      >
+      <div class="header">
+        <h1 class="title">SUPER<br />DELICIOUS<br />BURGER</h1>
+        <img class="del" src="del.png" alt="" width="150" />
+      </div>
+      <img
+        class="discount"
+        src="discount.png"
+        width="100"
+        height="100"
+        alt=""
+      />
+      <img class="hamburger" src="hamburger.png" alt="" width="300" />
+      <button class="btn">SHOP NOW</button>
+      <i
+        class="fas fa-phone-alt"
+        style="color: #fff; vertical-align: middle; margin-bottom: 10px;"
+        ><span style="margin-left: 5px;">012-345-678</span></i
+      >
+      <i
+        class="fas fa-globe-americas"
+        style="color: #fff; vertical-align: middle; margin-bottom: 10px;"
+        ><span style="margin-left: 5px;">WWW.GOODFOOD.COM</span></i
+      >
+    </div>
+  </body>
+</html>
